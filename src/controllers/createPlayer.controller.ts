@@ -7,7 +7,7 @@ import {
 } from '@nestjs/common';
 import { CreatePlayerDto } from '../dto/createPlayer.dto';
 import { ValidationPipe } from '@nestjs/common';
-import { PlayersService } from 'src/playersService.service';
+import { PlayersService } from 'src/services/playersService.service';
 import { QueryFailedError } from 'typeorm';
 
 @Controller('create-player')

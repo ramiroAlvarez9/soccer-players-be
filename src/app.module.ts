@@ -4,7 +4,7 @@ import { Player } from './entities/player.entity';
 import { PlayersController } from './controllers/players.controller';
 import { CreatePlayerController } from './controllers/createPlayer.controller';
 import { ConfigModule } from '@nestjs/config';
-import { PlayersService } from './playersService.service';
+import { PlayersService } from './services/playersService.service';
 import { ApiKeyMiddleware } from './middlewares/apikey.middleware';
 import { RequestMethod } from '@nestjs/common';
 
@@ -37,4 +37,3 @@ export class AppModule implements NestModule {
       );
   }
 }
-
