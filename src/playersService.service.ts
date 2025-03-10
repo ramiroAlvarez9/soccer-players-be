@@ -15,4 +15,7 @@ export class PlayersService {
     const player = this.playerRepository.create(createPlayerDto);
     return await this.playerRepository.save(player);
   }
+  async getAll(): Promise<Player[]> {
+    return await this.playerRepository.find();
+  }
 }
