@@ -2,10 +2,10 @@ import { Entity, PrimaryGeneratedColumn, Column, Check } from 'typeorm';
 
 @Entity()
 export class Player {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column()
+  @Column({ unique: true })
   nickname: string;
 
   @Column({
@@ -56,4 +56,3 @@ export class Player {
   @Check('average_score <= 10')
   average_score: number;
 }
-
