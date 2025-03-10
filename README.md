@@ -118,10 +118,11 @@ Payload Example:
 {
     "id": "<player-id>"
 }
+```
+
 Returns:
 
 ```json
-
 {
     "message": "Player with id <player-id> has been deleted successfully"
 }
