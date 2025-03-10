@@ -43,7 +43,9 @@ https://dincy-players-be.onrender.com/players
   },
   ...
 ]
--### 2. CREATE PLAYER (POST)
+```
+
+### CREATE PLAYER (POST)
 
 **Endpoint:**
 https://dincy-players-be.onrender.com/create-playe
@@ -57,7 +59,7 @@ https://dincy-players-be.onrender.com/create-playe
 }
 ```
 
-Where:
+**Where:**
 
 speed_score, resistance_score, and technical_score are numbers between 0 and 10.
 
@@ -78,7 +80,7 @@ response:
 
 https://dincy-players-be.onrender.com/update-player
 
-Payload Example:
+**Payload Example:**
 
 ```json
 {
@@ -89,6 +91,7 @@ Payload Example:
     "technical_score": 3
 }
 ```
+
 Returns:
 
 ```json
@@ -102,12 +105,13 @@ Returns:
 }
 ```
 average_score is the average of the three properties mentioned.
-4. DELETE PLAYER (DELETE)
-Endpoint:
 
-perl
-Copiar
+### 4. DELETE PLAYER (DELETE)
+
+**Endpoint:**
+
 https://dincy-players-be.onrender.com/delete-player
+
 Payload Example:
 
 ```json
