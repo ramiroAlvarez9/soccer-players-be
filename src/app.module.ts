@@ -19,7 +19,7 @@ import { DeletePlayerController } from './controllers/deletePlayer.controller';
       port: 5432,
       username: `${process.env.DATABASE_USERNAME}`,
       password: `${process.env.DATABASE_PASSWORD}`,
-      database: 'dincy-players',
+      database: `${process.env.DATABASE_NAME}`,
       entities: [Player],
       synchronize: true,
       logging: true,
