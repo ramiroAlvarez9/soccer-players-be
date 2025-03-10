@@ -41,7 +41,7 @@ https://dincy-players-be.onrender.com/players
       "technical_score": 4,
       "average_score": 6
   },
-  ...
+  
 ]
 ```
 
