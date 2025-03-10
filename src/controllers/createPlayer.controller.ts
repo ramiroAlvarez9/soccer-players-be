@@ -12,7 +12,7 @@ import { QueryFailedError } from 'typeorm';
 
 @Controller('create-player')
 export class CreatePlayerController {
-  constructor(private readonly playersService: PlayersService) {}
+  constructor(private readonly playersService: PlayersService) { }
 
   @Post()
   @HttpCode(200)

@@ -7,6 +7,8 @@ import { ConfigModule } from '@nestjs/config';
 import { PlayersService } from './services/playersService.service';
 import { ApiKeyMiddleware } from './middlewares/apikey.middleware';
 import { RequestMethod } from '@nestjs/common';
+import { UpdatePlayerController } from './controllers/updatePlayer.controller';
+import { DeletePlayerController } from './controllers/deletePlayer.controller';
 
 @Module({
   imports: [
@@ -24,7 +26,12 @@ import { RequestMethod } from '@nestjs/common';
     }),
     TypeOrmModule.forFeature([Player]),
   ],
-  controllers: [PlayersController, CreatePlayerController],
+  controllers: [
+    PlayersController,
+    CreatePlayerController,
+    UpdatePlayerController,
+    DeletePlayerController,
+  ],
   providers: [PlayersService],
 })
 export class AppModule implements NestModule {
