@@ -43,7 +43,7 @@ https://dincy-players-be.onrender.com/players
   },
   ...
 ]
-- ### 2. CREATE PLAYER (POST)
+-### 2. CREATE PLAYER (POST)
 
 **Endpoint:**
 https://dincy-players-be.onrender.com/create-playe
@@ -62,6 +62,7 @@ Where:
 speed_score, resistance_score, and technical_score are numbers between 0 and 10.
 
 response:
+```json 
 {
     "id": "<id>", 
     "nickname": "<nickname>",
@@ -70,7 +71,7 @@ response:
     "technical_score": 10,
     "average_score": 10
 }
-
+```
 - ### 3. UPDATE PLAYER (PUT)
 
 **Endpoint:** 
