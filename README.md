@@ -48,7 +48,7 @@ https://dincy-players-be.onrender.com/players
 ### CREATE PLAYER (POST)
 
 **Endpoint:**
-https://dincy-players-be.onrender.com/create-playe
+https://dincy-players-be.onrender.com/create-player
 
 ```json
 {
